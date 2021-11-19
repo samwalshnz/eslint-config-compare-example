@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "plugin:@nrwl/nx/javascript",
+    "plugin:@nrwl/nx/typescript",
+    "plugin:@nrwl/nx/react",
+    "plugin:@nrwl/nx/react-base",
+    "plugin:@nrwl/nx/react-typescript",
+    "plugin:@nrwl/nx/react-jsx"
+  ]
+}

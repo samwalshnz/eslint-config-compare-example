@@ -1,0 +1,22 @@
+{
+  "name": "eslint-configs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deps:create-react-app": "cd create-react-app && npm ci",
+    "deps:nx-all": "cd nx-all && npm ci",
+    "install-deps": "concurrently npm:deps:create-react-app npm:deps:nx-all",
+    "compare": "eslint-compare-config ./create-react-app ./nx-all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@scottnonnenberg/eslint-compare-config": "^1.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "eslint": "^8.2.0",
+    "foreach-folder": "^1.1.0"
+  }
+}

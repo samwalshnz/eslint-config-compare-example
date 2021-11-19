@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*",
+        "**/*.{spec,test}.*'"
+      ],
+      "env": {
+        // override to remove this, because it breaks the eslint-compare tool
+        // 'jest/globals': true,
+      }
+    }
+  ]
+}
